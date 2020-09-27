@@ -1,0 +1,6 @@
+# Personal laptop
+
+cask "arduino"
+cask "balenaetcher"
+cask "imageoptim"
+cask "skype"

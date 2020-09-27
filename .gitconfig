@@ -1,0 +1,26 @@
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+
+[gpg]
+	program = /usr/local/MacGPG2/bin/gpg2
+
+[fetch]
+	prune = true
+
+[push]
+	default = simple
+
+[commit]
+	gpgsign = true
+
+[tag]
+	gpgsign = true
+
+[pull]
+	default = simple
+
+[alias]
+	graph = log --graph --date-order --pretty=format:'%C(red)%h%C(reset) -%C(bold yellow)%d%C(reset) %s %C(bold green)(%cr)%C(reset) %C(blue)<%an>%C(reset)'
