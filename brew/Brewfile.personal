@@ -2,5 +2,8 @@
 
 cask "arduino"
 cask "balenaetcher"
+cask "google-backup-and-sync"
+cask "lulu"
 cask "imageoptim"
+cask "netiquette"
 cask "skype"
