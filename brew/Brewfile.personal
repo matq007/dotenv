@@ -1,11 +1,13 @@
 # Personal laptop
 
 cask "arduino"
+cask "anydesk"
 cask "balenaetcher"
 cask "google-backup-and-sync"
 cask "lulu"
 cask "imageoptim"
 cask "netiquette"
+cask "nextcloud"
 cask "skype"
 cask "sloth"
 cask "vnc-viewer"
