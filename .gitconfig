@@ -23,6 +23,7 @@
 	default = simple
 
 [alias]
+	l = "log --oneline"
 	graph = log --graph --date-order --pretty=format:'%C(red)%h%C(reset) -%C(bold yellow)%d%C(reset) %s %C(bold green)(%cr)%C(reset) %C(blue)<%an>%C(reset)'
 
 [core]

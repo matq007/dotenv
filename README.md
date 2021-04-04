@@ -1,13 +1,40 @@
 # dotenv
 
-## Setup
+## Steps
 
-1. Install homebrew
-2. Install brew packages (`brew bundle`)
-3. Copy configurations
-4. Setup [iTerm2](https://gitlab.com/gnachman/iterm2/-/wikis/back-up-preferences)
-5. Install [Rust](https://www.rust-lang.org/tools/install)
-6. Copy ssh keys
+```bash
+# install homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+cd brew
+brew bundle Brewfile.common
+
+# setup fish shell
+echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
+chsh -s /usr/local/bin/fish
+
+# setup SSH
+mkdir ~/.ssh
+chmod 700 ~/.ssh
+chmod 644 ~/.ssh/authorized_keys
+chmod 644 ~/.ssh/known_hosts
+
+# restore ssh keys
+chmod 644 ~/.ssh/config
+# chmod 600 ~/.ssh/github ...
+chmod 644 ~/.ssh/*.pub
+
+# copy files
+cp -r .config /Users/$USER/
+cp .gitconfig /Users/$USER/
+cp .gitconfig_global /Users/$USER/
+
+# install fisher
+curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+fisher
+
+# Load configuration for iTerm2
+# Install rust
+```
 
 ## Additional tools
 
