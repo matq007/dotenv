@@ -1,0 +1,34 @@
+add_newline = false
+
+[line_break]
+disabled = true
+
+[username]
+style_user = "bold #99d56c"
+style_root = "bold black"
+format = "[$user@]($style)"
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+disabled = false
+style = "bold #99d56c"
+
+[directory]
+truncation_length = 5
+format = "[$path](bold #47cada)[$lock_symbol]($lock_style) "
+
+[character]
+success_symbol = "[»](bold grey)"
+
+[package]
+disabled = true
+
+[conda]
+format = "[$symbol$environment](dimmed green) "
+style = "bold green"
+
+[python]
+format = "[$symbol$version]($style) "
+style = "bold green"
