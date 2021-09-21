@@ -5,8 +5,7 @@
 ```bash
 # install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-cd brew
-brew bundle Brewfile.common
+cd brew && brew bundle --file Brewfile.common
 
 # setup fish shell
 echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
