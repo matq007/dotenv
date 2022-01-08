@@ -1,0 +1,14 @@
+name: name
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  # mandatory for jupyter
+  - conda-forge::python=3.7
+  - conda-forge::ipykernel
+  - conda-forge::ipywidgets
+  - conda-forge::nodejs
+  - pip
+  - pip:
+    - package
