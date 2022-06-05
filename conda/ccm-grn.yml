@@ -147,6 +147,7 @@ dependencies:
     - pyct==0.4.8
     - pydeck==0.7.1
     - pyedm==1.9.3.0
+    - pynndescent==0.5.5
     - pytz==2021.3
     - pytz-deprecation-shim==0.1.0.post0
     - pyvis==0.1.9
@@ -175,6 +176,7 @@ dependencies:
     - typed-ast==1.4.3
     - tzdata==2021.5
     - tzlocal==4.1
+    - umap-learn==0.5.2
     - urllib3==1.26.7
     - validators==0.18.2
     - virtualenv==20.8.1

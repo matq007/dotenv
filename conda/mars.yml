@@ -1,0 +1,33 @@
+name: mars
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - bzip2=1.0.8
+  - ca-certificates=2021.10.8
+  - libffi=3.4.2
+  - libzlib=1.2.11
+  - ncurses=6.3
+  - openssl=3.0.3
+  - pip=22.1
+  - python=3.8.13
+  - python_abi=3.8
+  - readline=8.1
+  - setuptools=62.2.0
+  - sqlite=3.38.5
+  - tk=8.6.12
+  - wheel=0.37.1
+  - xz=5.2.5
+  - zlib=1.2.11
+  - pip:
+    - biopython==1.79
+    - et-xmlfile==1.1.0
+    - numpy==1.22.3
+    - openpyxl==3.0.9
+    - pandas==1.4.2
+    - python-dateutil==2.8.2
+    - pytz==2022.1
+    - six==1.16.0
+    - tqdm==4.64.0
+prefix: /Users/fdb589/opt/miniconda3/envs/mars
