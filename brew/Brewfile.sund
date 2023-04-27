@@ -1,7 +1,5 @@
 # SUND laptop
 
-cask "anydesk"
 cask "cytoscape"
 cask "r"
 cask "rstudio"
-cask "teamviewer"

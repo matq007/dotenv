@@ -39,22 +39,4 @@ fisher
 
 * Adobe Illustrator CC 2018
 * Adobe Photoshop CC 2017
-* iStat Menu
 * MS Office
-
-## Other
-
-### R
-
-```bash
-# .R/Makevars
-VER=-9
-CC=gcc$(VER)
-CXX=g++$(VER)
-CFLAGS=-mtune=native -g -O2 -Wall -pedantic -Wconversion
-CXXFLAGS=-mtune=native -g -O2 -Wall -pedantic -Wconversion
-FLIBS=-L/usr/local/Cellar/gcc/9.2.0/lib/gcc/9/
-
-SHLIB_OPENMP_CFLAGS=-Xpreprocessor -fopenmp
-SHLIB_OPENMP_CXXFLAGS=-Xpreprocessor -fopenmp
-```
